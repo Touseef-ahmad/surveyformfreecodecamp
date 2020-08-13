@@ -9,14 +9,12 @@
 </head>
 
 <body>
-    <header>
-        <h1 id="title">A Survey Form</h1>
-        <p id=description>
-            Lorem lipsum
-        </p>
-    </header>
-    <main>
+    <main id="main">
         <form action="" id="survey-form">
+            <h1 id="title">A Survey Form</h1>
+        <p id=description>
+            A survey for most popular car company
+        </p>
             <label for="name" id="name-label">Name:</label>
             <input placeholder="please enter your name" type="text" id="name" name="name" required><br>
             <label for="email" id="email-label">Email:</label>
@@ -34,22 +32,21 @@
             <!-- End of radio group -->
             <!-- Start of select group -->
             <select name="dropdown" id="dropdown">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
+                <option value="select">Select you favourite car company</option>
+                <option value="Honda">Honda</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Tesla">Tesla</option>
                 <option value="audi">Audi</option>
             </select><br>
             <!-- End of select group-->
             <!-- Start of checkbox group -->
             <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1"> I have a bike</label><br>
+            <label for="vehicle1"> I like tesla cybertruck</label><br>
             <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> I have a car</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> I have a boat</label><br>
+            <label for="vehicle2"> I like racing cars</label><br>
             <!-- End of checkbox group-->
             <textarea id="w3review" name="w3review" rows="4" cols="50">
-                At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+                If your favourite car company wasn't listed please let us know
             </textarea><br>
             <input id="submit" type="submit" value="Submit">
         </form>
