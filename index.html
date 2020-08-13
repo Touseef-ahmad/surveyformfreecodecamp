@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -17,19 +18,19 @@
     <main>
         <form action="" id="survey-form">
             <label for="name" id="name-label">Name:</label>
-            <input placeholder="please enter your name" type="text" id="name" name="name" required>
+            <input placeholder="please enter your name" type="text" id="name" name="name" required><br>
             <label for="email" id="email-label">Email:</label>
-            <input placeholder="please enter your email" type="email" id="email" name="email" required>
+            <input placeholder="please enter your email" type="email" id="email" name="email" required><br>
             <label for="number" id="number-label">Age:</label>
             <input placeholder="please enter your age" type="number" id="number" size="6" name="age" min="18" max="99"
-                value="21">
+                value="21"><br>
             <!-- Start of radio group -->
             <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label><br>
+            <label for="male">Male</label>
             <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label><br>
+            <label for="female">Female</label>
             <input type="radio" id="other" name="gender" value="other">
-            <label for="other">Other</label>
+            <label for="other">Other</label><br>
             <!-- End of radio group -->
             <!-- Start of select group -->
             <select name="dropdown" id="dropdown">
@@ -37,7 +38,7 @@
                 <option value="saab">Saab</option>
                 <option value="opel">Opel</option>
                 <option value="audi">Audi</option>
-            </select>
+            </select><br>
             <!-- End of select group-->
             <!-- Start of checkbox group -->
             <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
@@ -49,7 +50,7 @@
             <!-- End of checkbox group-->
             <textarea id="w3review" name="w3review" rows="4" cols="50">
                 At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
-            </textarea>
+            </textarea><br>
             <input id="submit" type="submit" value="Submit">
         </form>
     </main>
