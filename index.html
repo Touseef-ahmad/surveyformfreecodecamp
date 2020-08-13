@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">A Survey Form</h1>
+        <p id=description>
+            Lorem lipsum
+        </p>
+    </header>
+    <main>
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">Name:</label>
+            <input placeholder="please enter your name" type="text" id="name" name="name" required>
+            <label for="email" id="email-label">Email:</label>
+            <input placeholder="please enter your email" type="email" id="email" name="email" required>
+            <label for="number" id="number-label">Age:</label>
+            <input placeholder="please enter your age" type="number" id="number" size="6" name="age" min="18" max="99"
+                value="21">
+            <!-- Start of radio group -->
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            <!-- End of radio group -->
+            <!-- Start of select group -->
+            <select name="dropdown" id="dropdown">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+            </select>
+            <!-- End of select group-->
+            <!-- Start of checkbox group -->
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br>
+            <!-- End of checkbox group-->
+            <textarea id="w3review" name="w3review" rows="4" cols="50">
+                At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+            </textarea>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
